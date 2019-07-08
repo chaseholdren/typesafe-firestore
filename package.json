@@ -1,0 +1,71 @@
+{
+  "name": "typesafe-firestore",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "esnext": "index.ts",
+  "files": [
+    "*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "firebase": "^6.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.2",
+    "@typescript-eslint/parser": "^1.11.0",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "eslint": "^5.16.0",
+    "prettier": "^1.18.2",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "firebase": "6.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "env": {
+      "browser": true
+    },
+    "parserOptions": {
+      "project": "./tsconfig.json",
+      "tsconfigRootDir": "./",
+      "extraFileExtensions": [
+        ".tsx",
+        ".ts"
+      ]
+    },
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.test.ts"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "eslintIgnore": [
+    "build/*",
+    "node_modules/*"
+  ]
+}

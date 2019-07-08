@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [],
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "allowJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "files": ["index.ts"]
+}
