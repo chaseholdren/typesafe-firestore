@@ -1,7 +1,9 @@
 {
   "name": "typesafe-firestore",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
+  "repository": "github:chaseholdren/typesafe-firestore",
+  "browser": "build/index.js",
   "main": "build/index.js",
   "esnext": "index.ts",
   "scripts": {
