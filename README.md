@@ -1,5 +1,7 @@
 # typesafe-firestore
 
+[![npm version](https://badge.fury.io/js/typesafe-firestore.svg)](https://badge.fury.io/js/typesafe-firestore)
+
 A library of typescript interfaces that extend existing firebase classes, adding type safety and a better autocomplete experience.
 
 ## Installation
